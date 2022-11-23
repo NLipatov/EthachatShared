@@ -1,6 +1,6 @@
 ﻿namespace LimpShared.Authentification
 {
-    public interface IRefreshToken
+    public class RefreshToken
     {
         DateTime Created { get; set; }
         DateTime Expires { get; set; }

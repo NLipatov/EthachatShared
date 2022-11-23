@@ -6,6 +6,6 @@ namespace LimpShared.Authentification
     public class JWTPair
     {
         public string AccessToken { get; set; }
-        public IRefreshToken RefreshToken { get; set; }
+        public RefreshToken RefreshToken { get; set; }
     }
 }
