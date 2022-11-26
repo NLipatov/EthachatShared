@@ -5,6 +5,6 @@
         public TokenRelatedOperationResultType ResultType { get; set; }
         public FailureType? FailureType { get; set; }
         public JWTPair? JWTPairPayload { get; set; }
-        public string Username { get; set; } = string.Empty;
+        public string? Username { get; set; }
     }
 }
