@@ -1,5 +1,4 @@
 ﻿#nullable disable
-using AuthAPI;
 
 namespace LimpShared.Authentification
 {
