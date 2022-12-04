@@ -6,5 +6,6 @@
         public FailureType? FailureType { get; set; }
         public JWTPair? JWTPairPayload { get; set; }
         public string? Username { get; set; }
+        public string? Message { get; set; }
     }
 }

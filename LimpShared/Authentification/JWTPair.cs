@@ -1,6 +1,4 @@
 ﻿#nullable disable
-using AuthAPI;
-using System.Text.Json.Serialization;
 
 namespace LimpShared.Authentification
 {
