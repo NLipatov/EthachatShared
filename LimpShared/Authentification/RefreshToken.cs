@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace LimpShared.Authentification
+﻿namespace LimpShared.Authentification
 {
     public class RefreshToken
     {
