@@ -11,5 +11,10 @@ public enum KeyFormat
     /// <summary>
     /// Key as a PEM-encoded SubjectPublicKeyInfo object
     /// </summary>
-    PEM_SPKI
+    PEM_SPKI,
+
+    /// <summary>
+    /// Key as byte array
+    /// </summary>
+    RAW
 }
