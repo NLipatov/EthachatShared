@@ -6,4 +6,6 @@ public class Key
     public KeyFormat? Format { get; set; }
     public KeyType? Type { get; set; }
     public string? Contact { get; set; }
+    public string? Author { get; set; }
+    public bool IsAccepted { get; set; } = false;
 }
