@@ -1,5 +1,6 @@
 ﻿#nullable disable
-namespace AuthAPI.DTOs.Claims
+
+namespace LimpShared.Models.Authentication.Models.AuthenticatedUserRepresentation.Claims
 {
     public class UserClaimsDTO
     {

@@ -1,5 +1,7 @@
 ﻿#nullable disable
-namespace LimpShared.DTOs.PublicKey;
+using LimpShared;
+
+namespace LimpShared.Models.Authentication.Models.AuthenticatedUserRepresentation.PublicKey;
 
 public class PublicKeyDTO
 {

@@ -1,6 +1,6 @@
-﻿using LimpShared.ResultTypeEnum;
+﻿using LimpShared.Models.AuthenticationModels.ResultTypeEnum;
 
-namespace LimpShared.Authentification
+namespace LimpShared.Models.Authentication.Models
 {
     public class TokenRelatedOperationResult
     {
