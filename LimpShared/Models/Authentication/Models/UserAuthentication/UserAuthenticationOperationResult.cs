@@ -1,15 +1,14 @@
-﻿using AuthAPI.DTOs.User;
-using LimpShared.ResultTypeEnum;
+﻿using LimpShared.Models.AuthenticationModels.ResultTypeEnum;
 using System.Text.Json.Serialization;
 
-namespace LimpShared.DTOs.User;
+namespace LimpShared.Models.Authentication.Models.UserAuthentication;
 
-public class UserOperationResult
+public class UserAuthenticationOperationResult
 {
     [JsonPropertyName("systemMessage")]
     public string? SystemMessage { get; set; }
     [JsonPropertyName("userDTO")]
-    public UserDTO? UserDTO { get; set; }
+    public UserAuthentication? UserDTO { get; set; }
     [JsonPropertyName("result")]
     public OperationResultType ResultType { get; set; }
 }

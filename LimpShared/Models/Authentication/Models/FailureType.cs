@@ -1,4 +1,4 @@
-﻿namespace LimpShared.Authentification
+﻿namespace LimpShared.Models.Authentication.Models
 {
     public enum FailureType
     {

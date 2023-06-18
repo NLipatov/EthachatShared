@@ -1,6 +1,8 @@
 ﻿#nullable disable
 
-namespace LimpShared.Authentification
+using LimpShared;
+
+namespace LimpShared.Models.Authentication.Models
 {
     public class JWTPair
     {
