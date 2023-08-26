@@ -4,6 +4,6 @@
     {
         public string? Message { get; set; }
         public AuthResultType? Result { get; set; }
-        public JWTPair? JWTPair { get; set; }
+        public JwtPair? JwtPair { get; set; }
     }
 }

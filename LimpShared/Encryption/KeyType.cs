@@ -3,7 +3,7 @@
 public enum KeyType
 {
     Unspecified,
-    RSAPublic,
-    RSAPrivate,
-    AES
+    RsaPublic,
+    RsaPrivate,
+    Aes
 }

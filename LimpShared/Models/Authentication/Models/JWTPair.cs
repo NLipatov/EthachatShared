@@ -4,7 +4,7 @@ using LimpShared;
 
 namespace LimpShared.Models.Authentication.Models
 {
-    public class JWTPair
+    public class JwtPair
     {
         public string AccessToken { get; set; }
         public RefreshToken RefreshToken { get; set; }
