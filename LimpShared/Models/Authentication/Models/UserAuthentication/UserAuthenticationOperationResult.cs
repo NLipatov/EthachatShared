@@ -1,5 +1,5 @@
-﻿using LimpShared.Models.AuthenticationModels.ResultTypeEnum;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
+using LimpShared.Models.Authentication.Enums;
 
 namespace LimpShared.Models.Authentication.Models.UserAuthentication;
 
