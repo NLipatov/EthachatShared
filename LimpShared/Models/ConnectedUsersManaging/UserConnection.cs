@@ -1,5 +1,4 @@
 ﻿#nullable disable
-using ClientServerCommon;
 using LimpShared.Encryption;
 
 namespace LimpShared.Models.ConnectedUsersManaging

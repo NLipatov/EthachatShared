@@ -1,4 +1,4 @@
-﻿using LimpShared.Models.AuthenticationModels.ResultTypeEnum;
+﻿using LimpShared.Models.Authentication.Enums;
 
 namespace LimpShared.Models.Authentication.Models
 {

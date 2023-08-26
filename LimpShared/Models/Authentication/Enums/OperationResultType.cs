@@ -1,4 +1,4 @@
-﻿namespace LimpShared.Models.AuthenticationModels.ResultTypeEnum
+﻿namespace LimpShared.Models.Authentication.Enums
 {
     public enum OperationResultType
     {
