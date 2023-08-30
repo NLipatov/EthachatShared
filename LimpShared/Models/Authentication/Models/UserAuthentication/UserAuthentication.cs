@@ -6,6 +6,6 @@ public class UserAuthentication
 {
     public string Username { get; set; } = "N/A";
     public string? Password { get; set; }
-    public List<UserClaimsDTO>? Claims { get; set; }
+    public List<UserClaimsDto>? Claims { get; set; }
     public Guid UserAgentId { get; set; }
 }

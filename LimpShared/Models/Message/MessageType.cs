@@ -9,9 +9,9 @@ public enum MessageType
     /// <summary>
     /// System message containing AES key proposal
     /// </summary>
-    AESOffer,
+    AesOffer,
     /// <summary>
     /// System message that is sent to accept AES key proposal
     /// </summary>
-    AESAccept
+    AesAccept
 }

@@ -6,15 +6,15 @@ public enum KeyFormat
     /// <summary>
     /// Key as a PEM-encoded PKCS #8 object
     /// </summary>
-    PEM_PKCS8,
+    PemPkcs8,
 
     /// <summary>
     /// Key as a PEM-encoded SubjectPublicKeyInfo object
     /// </summary>
-    PEM_SPKI,
+    PemSpki,
 
     /// <summary>
     /// Key as byte array
     /// </summary>
-    RAW
+    Raw
 }

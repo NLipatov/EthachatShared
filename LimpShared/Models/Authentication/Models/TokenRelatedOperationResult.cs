@@ -1,4 +1,4 @@
-﻿using LimpShared.Models.AuthenticationModels.ResultTypeEnum;
+﻿using LimpShared.Models.Authentication.Enums;
 
 namespace LimpShared.Models.Authentication.Models
 {
@@ -6,7 +6,7 @@ namespace LimpShared.Models.Authentication.Models
     {
         public OperationResultType ResultType { get; set; }
         public FailureType? FailureType { get; set; }
-        public JWTPair? JWTPairPayload { get; set; }
+        public JwtPair? JwtPairPayload { get; set; }
         public string? Username { get; set; }
         public string? Message { get; set; }
     }

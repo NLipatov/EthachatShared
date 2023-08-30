@@ -1,6 +1,6 @@
 ﻿namespace LimpShared.Models.WebPushNotification
 {
-    public record NotificationSubscriptionDTO
+    public record NotificationSubscriptionDto
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public string? AccessToken { get; set; }
