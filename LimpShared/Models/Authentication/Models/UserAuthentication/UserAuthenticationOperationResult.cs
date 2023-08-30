@@ -1,14 +1,15 @@
 ﻿using System.Text.Json.Serialization;
 using LimpShared.Models.Authentication.Enums;
 
-namespace LimpShared.Models.Authentication.Models.UserAuthentication;
-
-public class UserAuthenticationOperationResult
+namespace LimpShared.Models.Authentication.Models.UserAuthentication
 {
-    [JsonPropertyName("systemMessage")]
-    public string? SystemMessage { get; set; }
-    [JsonPropertyName("userDTO")]
-    public UserAuthentication? UserDto { get; set; }
-    [JsonPropertyName("result")]
-    public OperationResultType ResultType { get; set; }
+    public class UserAuthenticationOperationResult
+    {
+        [JsonPropertyName("systemMessage")]
+        public string? SystemMessage { get; set; }
+        [JsonPropertyName("userDTO")]
+        public UserAuthentication? UserDto { get; set; }
+        [JsonPropertyName("result")]
+        public OperationResultType ResultType { get; set; }
+    }
 }
