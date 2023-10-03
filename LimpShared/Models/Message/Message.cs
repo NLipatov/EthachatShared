@@ -18,6 +18,7 @@ public class Message : ICloneable<Message>
     public DateTime DateRead { get; set; }
     public DateTime DateSent { get; set; }
     public MessageType Type { get; set; }
+    public bool IsRegisteredByHub { get; set; }
 
     public Message Clone()
     {
