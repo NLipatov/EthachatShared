@@ -7,4 +7,6 @@ public record Package
     public int Index { get; set; }
     public int Total { get; set; }
     public string B64Data { get; set; }
+    public string ContentType { get; set; }
+    public string FileName { get; set; }
 }
