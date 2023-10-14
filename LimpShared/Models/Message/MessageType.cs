@@ -5,7 +5,7 @@ public enum MessageType
     /// <summary>
     /// A message that user will see in GUI
     /// </summary>
-    UserMessage,
+    TextMessage,
     /// <summary>
     /// System message containing AES key proposal
     /// </summary>
@@ -14,5 +14,5 @@ public enum MessageType
     /// System message that is sent to accept AES key proposal
     /// </summary>
     AesAccept,
-    DataTransfer
+    DataPackage
 }
