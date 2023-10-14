@@ -1,11 +1,13 @@
 ﻿using System.Text.Json;
 using LimpShared.Contracts;
+using LimpShared.Models.Message.DataTransfer;
 using ICloneable = LimpShared.Contracts.ICloneable<LimpShared.Models.Message.Message>;
 
 namespace LimpShared.Models.Message;
 
 public class Message : ICloneable<Message>
 {
+    public Package? Package { get; set; }
     public Guid Id { get; set; } = Guid.NewGuid();
     public string? TargetGroup { get; set; }
     public string? SenderConnectionId { get; set; }
