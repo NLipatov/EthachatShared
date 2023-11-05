@@ -1,5 +1,5 @@
 ﻿#nullable disable
-using LimpShared;
+using LimpShared.Models.Authentication.Types;
 
 namespace LimpShared.Models.Authentication.Models.AuthenticatedUserRepresentation.PublicKey
 {
@@ -7,5 +7,6 @@ namespace LimpShared.Models.Authentication.Models.AuthenticatedUserRepresentatio
     {
         public string Key { get; set; }
         public string Username { get; set; }
+        public AuthenticationType AuthenticationType { get; set; }
     }
 }
