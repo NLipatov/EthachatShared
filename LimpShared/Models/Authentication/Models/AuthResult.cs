@@ -1,4 +1,6 @@
-﻿namespace LimpShared.Models.Authentication.Models
+﻿using LimpShared.Models.Authentication.Models.Credentials.Implementation;
+
+namespace LimpShared.Models.Authentication.Models
 {
     public class AuthResult
     {

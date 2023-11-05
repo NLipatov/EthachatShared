@@ -1,4 +1,5 @@
 ﻿using LimpShared.Models.Authentication.Enums;
+using LimpShared.Models.Authentication.Models.Credentials.Implementation;
 
 namespace LimpShared.Models.Authentication.Models
 {
