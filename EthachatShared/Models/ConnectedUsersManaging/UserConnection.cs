@@ -1,4 +1,5 @@
 ﻿#nullable disable
+using System.Collections.Generic;
 using EthachatShared.Encryption;
 
 namespace EthachatShared.Models.ConnectedUsersManaging
