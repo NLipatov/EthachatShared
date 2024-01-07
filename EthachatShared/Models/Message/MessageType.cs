@@ -16,5 +16,6 @@ public enum MessageType
     /// </summary>
     AesAccept,
     DataPackage,
-    Metadata
+    Metadata,
+    BlobLink
 }

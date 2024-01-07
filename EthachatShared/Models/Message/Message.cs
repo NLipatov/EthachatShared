@@ -9,6 +9,7 @@ public class Message : ICloneable<Message>
 {
     public Metadata? Metadata { get; set; }
     public Package? Package { get; set; }
+    public string BlobLink { get; set; }
     public Guid Id { get; set; } = Guid.NewGuid();
     public string? TargetGroup { get; set; }
     public string? SenderConnectionId { get; set; }
