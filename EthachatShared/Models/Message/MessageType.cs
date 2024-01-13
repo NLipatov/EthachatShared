@@ -17,5 +17,6 @@ public enum MessageType
     AesAccept,
     DataPackage,
     Metadata,
-    BlobLink
+    BlobLink,
+    BrowserFileMessage
 }
