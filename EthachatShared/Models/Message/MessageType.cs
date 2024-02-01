@@ -2,6 +2,7 @@
 
 public enum MessageType
 {
+    UNSET,
     /// <summary>
     /// A message that user will see in GUI
     /// </summary>
@@ -14,5 +15,8 @@ public enum MessageType
     /// System message that is sent to accept AES key proposal
     /// </summary>
     AesAccept,
-    DataPackage
+    DataPackage,
+    Metadata,
+    BlobLink,
+    BrowserFileMessage
 }

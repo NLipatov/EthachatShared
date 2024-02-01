@@ -1,5 +1,8 @@
 ﻿#nullable disable
 
+using System;
+using System.Collections.Generic;
+
 namespace EthachatShared.Models.Message.DataTransfer;
 
 public record DataFile

@@ -1,13 +1,15 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
 using EthachatShared.Contracts;
 using EthachatShared.Models.Message.DataTransfer;
-using ICloneable = EthachatShared.Contracts.ICloneable<EthachatShared.Models.Message.Message>;
 
 namespace EthachatShared.Models.Message;
 
 public class Message : ICloneable<Message>
 {
+    public Metadata? Metadata { get; set; }
     public Package? Package { get; set; }
+    public string BlobLink { get; set; }
     public Guid Id { get; set; } = Guid.NewGuid();
     public string? TargetGroup { get; set; }
     public string? SenderConnectionId { get; set; }

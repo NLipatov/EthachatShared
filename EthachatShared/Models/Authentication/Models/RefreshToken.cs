@@ -1,4 +1,6 @@
-﻿namespace EthachatShared.Models.Authentication.Models
+﻿using System;
+
+namespace EthachatShared.Models.Authentication.Models
 {
     public class RefreshToken
     {
