@@ -1,6 +1,4 @@
-﻿using System;
-using EthachatShared.Models.Authentication.Models.Credentials.Implementation;
-using EthachatShared.Models.Authentication.Models.Credentials;
+﻿using EthachatShared.Models.Authentication.Models.Credentials.Implementation;
 
 namespace EthachatShared.Models.WebPushNotification
 {

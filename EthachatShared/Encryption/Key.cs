@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace EthachatShared.Encryption;
+﻿namespace EthachatShared.Encryption;
 
 public class Key
 {

@@ -1,6 +1,4 @@
 ﻿#nullable disable
-using System;
-
 namespace EthachatShared.Models.Message.DataTransfer;
 
 public record Package

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using EthachatShared.Contracts;
 using EthachatShared.Models.Message.DataTransfer;
 

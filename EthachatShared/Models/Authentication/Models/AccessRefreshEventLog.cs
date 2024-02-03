@@ -1,5 +1,4 @@
-﻿using System;
-using EthachatShared.Models.Authentication.Enums;
+﻿using EthachatShared.Models.Authentication.Enums;
 
 namespace EthachatShared.Models.Authentication.Models;
 

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace EthachatShared.Models.Authentication.Models;
+﻿namespace EthachatShared.Models.Authentication.Models;
 
 public record JwtRefreshLog
 {

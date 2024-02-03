@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using EthachatShared.Models.Authentication.Models.AuthenticatedUserRepresentation.Claims;
+﻿using EthachatShared.Models.Authentication.Models.AuthenticatedUserRepresentation.Claims;
 
 namespace EthachatShared.Models.Authentication.Models.UserAuthentication
 {

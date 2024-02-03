@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace EthachatShared.Models.ConnectedUsersManaging
+﻿namespace EthachatShared.Models.ConnectedUsersManaging
 {
     public record UserConnectionsReport
     {
