@@ -19,5 +19,6 @@ public enum MessageType
     DataPackage,
     Metadata,
     BlobLink,
-    BrowserFileMessage
+    BrowserFileMessage,
+    SyncItem
 }

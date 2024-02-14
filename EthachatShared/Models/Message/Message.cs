@@ -1,11 +1,13 @@
 ﻿using System.Text.Json;
 using EthachatShared.Contracts;
 using EthachatShared.Models.Message.DataTransfer;
+using EthachatShared.Models.Message.TransferStatus;
 
 namespace EthachatShared.Models.Message;
 
 public class Message : ICloneable<Message>
 {
+    public SyncItem? SyncItem { get; set; }
     public Metadata? Metadata { get; set; }
     public Package? Package { get; set; }
     public string BlobLink { get; set; }
