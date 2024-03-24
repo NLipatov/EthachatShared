@@ -20,5 +20,6 @@ public enum MessageType
     Metadata,
     BlobLink,
     BrowserFileMessage,
-    SyncItem
+    SyncItem,
+    HLSPlaylist
 }
