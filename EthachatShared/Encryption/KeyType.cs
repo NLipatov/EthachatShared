@@ -5,5 +5,6 @@ public enum KeyType
     Unspecified,
     RsaPublic,
     RsaPrivate,
-    Aes
+    Aes,
+    RsaComposite
 }
