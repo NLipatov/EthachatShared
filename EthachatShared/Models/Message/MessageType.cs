@@ -21,5 +21,6 @@ public enum MessageType
     BlobLink,
     BrowserFileMessage,
     SyncItem,
-    HLSPlaylist
+    HLSPlaylist,
+    MessageReadConfirmation
 }
