@@ -22,5 +22,6 @@ public enum MessageType
     BrowserFileMessage,
     SyncItem,
     HLSPlaylist,
-    MessageReadConfirmation
+    MessageReadConfirmation,
+    MessageReceivedConfirmation
 }
