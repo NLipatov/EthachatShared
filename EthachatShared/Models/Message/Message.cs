@@ -23,7 +23,7 @@ public class Message : ICloneable<Message>
     public DateTime DateReceived { get; set; }
     public bool IsSeen { get; set; } = false;
     public DateTime DateRead { get; set; }
-    public DateTime DateSent { get; set; }
+    public DateTime DateSent { get; set; } = DateTime.UtcNow;
     public MessageType Type { get; set; }
     public bool IsRegisteredByHub { get; set; }
 
