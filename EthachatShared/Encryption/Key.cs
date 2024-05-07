@@ -9,4 +9,6 @@ public class Key
     public string? Author { get; set; }
     public bool IsAccepted { get; set; } = false;
     public DateTime CreationDate { get; set; } = DateTime.UtcNow;
+    public Guid? OfferMessageId { get; set; }
+    public Guid? AcceptMessageId { get; set; }
 }
