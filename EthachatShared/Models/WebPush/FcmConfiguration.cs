@@ -1,13 +1,29 @@
+using System.Text.Json.Serialization;
+
 namespace EthachatShared.Models.WebPush;
 
 public class FcmConfiguration
 {
-    public required string ApiKey { get; set; }
-    public required string AuthDomain { get; set; }
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+    [JsonPropertyName("project_id")]
     public required string ProjectId { get; set; }
-    public required string StorageBucket { get; set; }
-    public required string MessagingSenderId { get; set; }
-    public required string AppId { get; set; }
-    public required string PublicVapidKey { get; set; }
-    
+    [JsonPropertyName("private_key_id")]
+    public required string PrivateKeyId { get; set; }
+    [JsonPropertyName("private_key")]
+    public required string PrivateKey  { get; set; }
+    [JsonPropertyName("client_email")]
+    public required string ClientEmail { get; set; }
+    [JsonPropertyName("client_id")]
+    public required string ClientId { get; set; }
+    [JsonPropertyName("auth_uri")]
+    public required string AuthUri { get; set; }
+    [JsonPropertyName("token_uri")]
+    public required string TokenUri { get; set; }
+    [JsonPropertyName("auth_provider_x509_cert_url")]
+    public required string AuthProviderX509CertUrl { get; set; }
+    [JsonPropertyName("client_x509_cert_url")]
+    public required string ClientX509CertUrl { get; set; }
+    [JsonPropertyName("universe_domain")]
+    public required string UniverseDomain { get; set; }
 }
