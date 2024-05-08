@@ -23,5 +23,6 @@ public enum MessageType
     SyncItem,
     HLSPlaylist,
     MessageReadConfirmation,
-    MessageReceivedConfirmation
+    MessageReceivedConfirmation,
+    RsaPubKey
 }
