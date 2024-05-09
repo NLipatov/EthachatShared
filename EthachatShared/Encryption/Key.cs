@@ -2,6 +2,7 @@
 
 public class Key
 {
+    public Guid Id { get; set; } = Guid.NewGuid();
     public object? Value { get; set; }
     public KeyFormat? Format { get; set; }
     public KeyType? Type { get; set; }

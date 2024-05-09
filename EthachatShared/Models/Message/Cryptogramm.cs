@@ -4,6 +4,6 @@
     {
         public string? Iv { get; set; }
         public string? Cyphertext { get; set; }
-        public DateTime KeyDateTime { get; set; }
+        public Guid KeyId { get; set; }
     }
 }
