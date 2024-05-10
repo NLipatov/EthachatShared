@@ -1,11 +1,12 @@
 ﻿using System.Text.Json;
 using EthachatShared.Contracts;
 using EthachatShared.Models.Message.DataTransfer;
+using EthachatShared.Models.Message.Interfaces;
 using EthachatShared.Models.Message.TransferStatus;
 
 namespace EthachatShared.Models.Message;
 
-public class Message : ICloneable<Message>
+public class Message : ICloneable<Message>, IDestinationResolvable, ISourceResolvable, IDescribeable
 {
     public HlsPlaylist? HlsPlaylist { get; set; }
     public SyncItem? SyncItem { get; set; }
@@ -13,11 +14,11 @@ public class Message : ICloneable<Message>
     public Package? Package { get; set; }
     public string BlobLink { get; set; }
     public Guid Id { get; set; } = Guid.NewGuid();
-    public string? TargetGroup { get; set; }
+    public string Target { get; set; }
     public string? SenderConnectionId { get; set; }
     public string? CompanionConnectionId { get; set; }
-    public string? Sender { get; set; }
-    public Cryptogramm? Cryptogramm { get; set; }
+    public string Sender { get; set; }
+    public Cryptogram? Cryptogramm { get; set; }
     public bool IsDelivered { get; set; } = false;
     public DateTime DateReceived { get; set; }
     public bool IsSeen { get; set; } = false;
@@ -31,5 +32,14 @@ public class Message : ICloneable<Message>
         return JsonSerializer
             .Deserialize<Message>
             (JsonSerializer.Serialize(this))!;
+    }
+
+    public string ItemDescription()
+    {
+        return Type switch
+        {
+            MessageType.Metadata => "file",
+            _ => "message"
+        };
     }
 }
