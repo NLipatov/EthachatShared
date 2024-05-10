@@ -2,7 +2,7 @@
 
 public enum MessageType
 {
-    UNSET,
+    Unset,
     /// <summary>
     /// A message that user will see in GUI
     /// </summary>
