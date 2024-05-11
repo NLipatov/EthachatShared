@@ -6,7 +6,7 @@ using EthachatShared.Models.Message.TransferStatus;
 
 namespace EthachatShared.Models.Message;
 
-public class Message : ICloneable<Message>, IDestinationResolvable, ISourceResolvable, IDescribeable
+public class Message : ICloneable<Message>, IDestinationResolvable, ISourceResolvable, IDescribeable, IIdentifiable
 {
     public HlsPlaylist? HlsPlaylist { get; set; }
     public SyncItem? SyncItem { get; set; }
