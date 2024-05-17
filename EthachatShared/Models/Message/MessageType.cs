@@ -24,5 +24,6 @@ public enum MessageType
     HLSPlaylist,
     MessageReadConfirmation,
     MessageReceivedConfirmation,
-    RsaPubKey
+    RsaPubKey,
+    ResendRequest
 }
