@@ -27,5 +27,6 @@ public enum MessageType
     RsaPubKey,
     ResendRequest,
     ConversationDeletionRequest,
-    DataTransferConfirmation
+    DataTransferConfirmation,
+    TypingEvent
 }
