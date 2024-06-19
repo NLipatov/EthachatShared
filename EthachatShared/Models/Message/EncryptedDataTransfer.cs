@@ -3,7 +3,7 @@ using EthachatShared.Models.Message.Interfaces;
 
 namespace EthachatShared.Models.Message;
 
-public record EncryptedDataTransfer : IDestinationResolvable, ISourceResolvable, IDescribeable, IIdentifiable
+public record EncryptedDataTransfer : IDestinationResolvable, ISourceResolvable, IDescribeable, IIdentifiable, IHasInnerDataType
 {
     public required Guid Id { get; set; } = Guid.NewGuid();
     public required Cryptogram Cryptogram { get; set; }
