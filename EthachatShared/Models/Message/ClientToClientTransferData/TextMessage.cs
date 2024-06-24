@@ -1,13 +1,15 @@
 using EthachatShared.Models.Message.Interfaces;
+using MessagePack;
 
 namespace EthachatShared.Models.Message.ClientToClientTransferData;
 
+[MessagePackObject]
 public record TextMessage : IIdentifiable, IDestinationResolvable
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
-    public required string Sender { get; set; }
-    public string Text { get; set; } = string.Empty;
-    public int Index { get; set; } = 0;
-    public int Total { get; set; } = 1;
-    public string Target { get; set; }
+    [Key(0)] public Guid Id { get; set; } = Guid.NewGuid();
+    [Key(1)] public required string Sender { get; set; }
+    [Key(2)] public string Text { get; set; } = string.Empty;
+    [Key(3)] public int Index { get; set; } = 0;
+    [Key(4)] public int Total { get; set; } = 1;
+    [Key(5)] public string Target { get; set; }
 }

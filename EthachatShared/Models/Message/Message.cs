@@ -3,29 +3,31 @@ using EthachatShared.Contracts;
 using EthachatShared.Models.Message.DataTransfer;
 using EthachatShared.Models.Message.Interfaces;
 using EthachatShared.Models.Message.TransferStatus;
+using MessagePack;
 
 namespace EthachatShared.Models.Message;
 
+[MessagePackObject]
 public class Message : ICloneable<Message>, IDestinationResolvable, ISourceResolvable, IDescribeable, IIdentifiable
 {
-    public HlsPlaylist? HlsPlaylist { get; set; }
-    public SyncItem? SyncItem { get; set; }
-    public Metadata? Metadata { get; set; }
-    public Package? Package { get; set; }
-    public string BlobLink { get; set; }
-    public Guid Id { get; set; } = Guid.NewGuid();
-    public string Target { get; set; }
-    public string? SenderConnectionId { get; set; }
-    public string? CompanionConnectionId { get; set; }
-    public string Sender { get; set; }
-    public Cryptogram? Cryptogramm { get; set; }
-    public bool IsDelivered { get; set; } = false;
-    public DateTime DateReceived { get; set; }
-    public bool IsSeen { get; set; } = false;
-    public DateTime DateRead { get; set; }
-    public DateTime DateSent { get; set; } = DateTime.UtcNow;
-    public MessageType Type { get; set; }
-    public bool IsRegisteredByHub { get; set; }
+    [Key(0)] public HlsPlaylist? HlsPlaylist { get; set; }
+    [Key(1)] public SyncItem? SyncItem { get; set; }
+    [Key(2)] public Metadata? Metadata { get; set; }
+    [Key(3)] public Package? Package { get; set; }
+    [Key(4)] public string BlobLink { get; set; }
+    [Key(5)] public Guid Id { get; set; } = Guid.NewGuid();
+    [Key(6)] public string Target { get; set; }
+    [Key(7)] public string? SenderConnectionId { get; set; }
+    [Key(8)] public string? CompanionConnectionId { get; set; }
+    [Key(9)] public string Sender { get; set; }
+    [Key(10)] public Cryptogram? Cryptogramm { get; set; }
+    [Key(11)] public bool IsDelivered { get; set; } = false;
+    [Key(12)] public DateTime DateReceived { get; set; }
+    [Key(13)] public bool IsSeen { get; set; } = false;
+    [Key(14)] public DateTime DateRead { get; set; }
+    [Key(15)] public DateTime DateSent { get; set; } = DateTime.UtcNow;
+    [Key(16)] public MessageType Type { get; set; }
+    [Key(17)] public bool IsRegisteredByHub { get; set; }
 
     public Message Clone()
     {

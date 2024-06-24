@@ -6,7 +6,7 @@ namespace EthachatShared.Models.Message;
 public record EncryptedDataTransfer : IDestinationResolvable, ISourceResolvable, IDescribeable, IIdentifiable, IHasInnerDataType
 {
     public required Guid Id { get; set; } = Guid.NewGuid();
-    public required Cryptogram Cryptogram { get; set; }
+    public BinaryCryptogram BinaryCryptogram { get; set; }
     public required Type DataType { get; set; }
     public required string Target { get; set; }
     public required string Sender { get; set; }

@@ -22,11 +22,6 @@ public enum MessageType
     BrowserFileMessage,
     SyncItem,
     HLSPlaylist,
-    MessageReadConfirmation,
-    MessageReceivedConfirmation,
     RsaPubKey,
-    ResendRequest,
-    ConversationDeletionRequest,
     DataTransferConfirmation,
-    TypingEvent
 }
