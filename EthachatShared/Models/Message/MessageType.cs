@@ -14,7 +14,6 @@ public enum MessageType
     /// <summary>
     /// System message that is sent to accept AES key proposal
     /// </summary>
-    AesOfferAccept,
     AesOfferDecline,
     DataPackage,
     Metadata,
