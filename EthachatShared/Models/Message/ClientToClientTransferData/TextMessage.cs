@@ -4,7 +4,7 @@ using MessagePack;
 namespace EthachatShared.Models.Message.ClientToClientTransferData;
 
 [MessagePackObject]
-public record TextMessage : IIdentifiable, IDestinationResolvable
+public record TextMessage : IIdentifiable, ISourceResolvable, IDestinationResolvable
 {
     [Key(0)] public Guid Id { get; set; } = Guid.NewGuid();
     [Key(1)] public required string Sender { get; set; }
