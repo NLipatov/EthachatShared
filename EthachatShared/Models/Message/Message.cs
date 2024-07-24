@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using EthachatShared.Contracts;
+using EthachatShared.Models.Cryptograms;
 using EthachatShared.Models.Message.DataTransfer;
 using EthachatShared.Models.Message.Interfaces;
 using EthachatShared.Models.Message.TransferStatus;
@@ -20,7 +21,7 @@ public class Message : ICloneable<Message>, IDestinationResolvable, ISourceResol
     [Key(7)] public string? SenderConnectionId { get; set; }
     [Key(8)] public string? CompanionConnectionId { get; set; }
     [Key(9)] public string Sender { get; set; }
-    [Key(10)] public Cryptogram? Cryptogramm { get; set; }
+    [Key(10)] public TextCryptogram? Cryptogramm { get; set; }
     [Key(11)] public bool IsDelivered { get; set; } = false;
     [Key(12)] public DateTime DateReceived { get; set; }
     [Key(13)] public bool IsSeen { get; set; } = false;
