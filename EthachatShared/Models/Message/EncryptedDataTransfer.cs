@@ -1,4 +1,5 @@
 #nullable disable
+using EthachatShared.Models.Cryptograms;
 using EthachatShared.Models.Message.Interfaces;
 
 namespace EthachatShared.Models.Message;
