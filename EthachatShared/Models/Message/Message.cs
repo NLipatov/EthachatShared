@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using EthachatShared.Contracts;
 using EthachatShared.Models.Cryptograms;
 using EthachatShared.Models.Message.DataTransfer;
 using EthachatShared.Models.Message.Interfaces;
@@ -9,7 +8,7 @@ using MessagePack;
 namespace EthachatShared.Models.Message;
 
 [MessagePackObject]
-public class Message : ICloneable<Message>, IDestinationResolvable, ISourceResolvable, IDescribeable, IIdentifiable
+public class Message : IDestinationResolvable, ISourceResolvable, IDescribeable, IIdentifiable
 {
     [Key(0)] public HlsPlaylist? HlsPlaylist { get; set; }
     [Key(1)] public SyncItem? SyncItem { get; set; }
