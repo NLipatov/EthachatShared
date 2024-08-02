@@ -5,7 +5,7 @@ namespace EthachatShared.Encryption;
 [MessagePackObject]
 public class Key
 {
-    [Key(0)] public Guid Id { get; set; } = Guid.NewGuid();
+    [Key(0)] public required Guid Id { get; init; }
     [Key(1)] public string Value { get; set; }
     [Key(2)] public KeyFormat? Format { get; set; }
     [Key(3)] public KeyType? Type { get; set; }
