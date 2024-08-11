@@ -8,7 +8,7 @@ using MessagePack;
 namespace EthachatShared.Models.Message;
 
 [MessagePackObject]
-public class Message : IDestinationResolvable, ISourceResolvable, IDescribeable, IIdentifiable
+public class Message : IDestinationResolvable, ISourceResolvable, IWebPushNotice, IIdentifiable
 {
     [Key(0)] public HlsPlaylist? HlsPlaylist { get; set; }
     [Key(1)] public SyncItem? SyncItem { get; set; }
@@ -36,12 +36,5 @@ public class Message : IDestinationResolvable, ISourceResolvable, IDescribeable,
             (JsonSerializer.Serialize(this))!;
     }
 
-    public string ItemDescription()
-    {
-        return Type switch
-        {
-            MessageType.Metadata => "file",
-            _ => "message"
-        };
-    }
+    public bool IsPushRequired { get; set; }
 }
