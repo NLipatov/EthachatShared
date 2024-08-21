@@ -11,5 +11,5 @@ public record TextMessage : IIdentifiable, ISourceResolvable, IDestinationResolv
     [Key(2)] public string Text { get; set; } = string.Empty;
     [Key(3)] public int Index { get; set; } = 0;
     [Key(4)] public int Total { get; set; } = 1;
-    [Key(5)] public string Target { get; set; }
+    [Key(5)] public required string Target { get; set; }
 }
