@@ -4,7 +4,7 @@ using EthachatShared.Models.Message.Interfaces;
 
 namespace EthachatShared.Models.Message;
 
-public record EncryptedDataTransfer : IDestinationResolvable, ISourceResolvable, IWebPushNotice, IIdentifiable, IHasInnerDataType
+public record ClientToClientData : IDestinationResolvable, ISourceResolvable, IWebPushNotice, IIdentifiable, IHasInnerDataType
 {
     public required Guid Id { get; set; } = Guid.NewGuid();
     public BinaryCryptogram BinaryCryptogram { get; set; }
